@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- ترميز اللغة العربية-->
+    <meta charset="UTF-8">
+    <!--الأحجام الحاسوب و الجوال-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--أيقونة عنوان الصفحة-->
+    <link rel="shortcut icon" type="imge/png" href="الصور/image.png">
+    <!--CSS ربط ملف-->
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <!--JavaScript ربط ملف-->
+    <script src="myFunctions.js"></script>
+    <!--عنوان الصفحة-->
+    <title>التطبيقات</title>
+</head>
+<!-------------------------------------------------------------------------------------------------------------------------->
+<body>
+<header>
+<nav>
+    <ul>
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><a href="apps.html">التطبيقات</a></li>
+        <li><a href="add_app.html">إدخال تطبيق</a></li>
+        <li class="call-us"><a href="aboutus.html">من نحن</a></li>
+    </ul>
+</nav>
+</header>
+<!-------------------------------------------------------------------------------------------------------------------------->
+<section>
+    <table id="appsTable">
+        <tr>
+            <th>اسم التطبيق</th>
+            <th>اسم الشركة المطورة</th>
+            <th>مجال الاستخدام</th>
+            <th>مجاني/ غير مجاني</th>
+            <th>اختيار</th>
+        </tr>
+
+        <tr>
+            <td>ChatGPT</td>
+            <td>OpenAI</td>
+            <td>Education</td>
+            <td>مجاني</td>
+            <td><button class="toggle">إظهار التفاصيل</button></td>
+        </tr>
+        <tr class="details">
+            <td colspan="5">
+                تطبيق دردشة ذكي يستخدم الذكاء الاصطناعي لتوليد النصوص.<br>
+                <audio controls><source src="audio.mp3" type="audio/mp3"></audio>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Copilot</td>
+            <td>Microsoft</td>
+            <td>Programming</td>
+            <td>مدفوع</td>
+            <td><button class="toggle">إظهار التفاصيل</button></td>
+        </tr>
+        <tr class="details">
+            <td colspan="5">
+                مساعد برمجي ذكي يقترح أكواد للمطورين.<br>
+                <img src="copilot_logo.png" alt="Copilot Logo" width="80">
+            </td>
+        </tr>
+    </table>
+</section>
+
+<!-------------------------------------------------------------------------------------------------------------------------->
+<hr>
+  <footer>
+    <p class="save">&#169; 2025 - موقع تعريف بتطبيقات الذكاء الاصطناعي </p>
+  </footer>
+</body>
+</html>

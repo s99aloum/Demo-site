@@ -1,0 +1,128 @@
+body {
+  text-align: right;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #222;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(15px);
+  background-repeat: no-repeat;
+  direction: rtl;      
+}
+nav ul {
+    background-color: darkslategray;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+}
+nav ul li{
+    float: right;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    font-size: 21px;
+    padding: 14px 16px;
+}
+nav ul li a:hover , .lists-content a:hover{
+    background-color: #111;
+}
+.call-us {
+    background-color: #4CAF50;
+    float: left;
+}        
+h1{
+    text-align: center;
+    padding-top: 28px;    /* المسافة العليا */
+    padding-bottom: 12px; /* المسافة السفلية */
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font: bold;
+}
+h3 {
+    text-align: center;
+    font-size: 25px;
+}
+.link {
+    text-align: center;
+    font-size: 30px;
+}
+a:hover {
+    color: rgb(18, 38, 186);
+}
+header h1 { 
+    margin: 0 0 8px 0; 
+}
+nav a {
+  color: white;
+  margin-left: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+main { 
+    padding: 20px; 
+}
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    background: white; 
+}
+table th, table td { 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    text-align: center; 
+}
+button { 
+    padding: 8px 12px; 
+    margin: 6px 4px; 
+    cursor: pointer; 
+}
+label { 
+    display: block; 
+    margin: 8px 0; 
+}
+#message {
+     margin-top: 10px;
+     color: green; 
+     font-weight: bold; 
+}
+.details-row td { 
+    text-align: right; 
+}
+.save {
+    direction: rtl;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+    .Social-Contact  {
+    background-color: darkslategray;
+    padding: 14px 15px;
+}
+.Social-Contact ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.Social-Contact ul li{
+    float: right;
+}
+.Social-Contact ul li a {
+    padding-right: 15px;
+    text-decoration: none;
+}
+.Social-Contact ul li a img{
+    width: 30px;
+}
+.follow-us {
+    color: white;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 20px;
+}
+

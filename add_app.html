@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- ترميز اللغة العربية-->
+    <meta charset="UTF-8">
+    <!--الأحجام الحاسوب و الجوال-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--أيقونة عنوان الصفحة-->
+    <link rel="shortcut icon" type="imge/png" href="الصور/image.png">
+    <!--CSS ربط ملف-->
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <!--JavaScript ربط ملف-->
+    <script src="myFunctions.js"></script>
+    <!--عنوان الصفحة-->
+    <title>إضافة تطبيق</title>
+</head>
+<!-------------------------------------------------------------------------------------------------------------------------->
+<body>
+<header>
+<nav>
+    <ul>
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><a href="apps.html">التطبيقات</a></li>
+        <li><a href="add_app.html">إدخال تطبيق</a></li>
+        <li class="call-us"><a href="aboutus.html">من نحن</a></li>
+    </ul>
+</nav>
+</header>
+<!-------------------------------------------------------------------------------------------------------------------------->
+<section>
+<form id="appForm" onsubmit="return validateForm()">
+    <label>اسم التطبيق:</label>
+    <input type="text" id="appName" placeholder="AppName" required><br>
+
+    <label>الشركة المصنعة:</label>
+    <input type="text" id="company" placeholder="Company" required><br>
+
+    <label>الموقع الإلكتروني:</label>
+    <input type="url" id="url" placeholder="https://example.com" required><br>
+
+    <label>مجال الاستخدام:</label>
+    <select id="field">
+        <option value="">اختر المجال</option>
+        <option value="Education">Education</option>
+        <option value="E-Commerce">E-Commerce</option>
+        <option value="Robotics">Robotics</option>
+    </select><br>
+
+    <label>مجاني؟</label>
+    <input type="radio" name="free" value="yes"> نعم
+    <input type="radio" name="free" value="no"> لا<br>
+
+    <label>شرح مختصر:</label>
+    <textarea id="desc" rows="4"></textarea><br>
+
+    <button type="submit">إرسال</button>
+    <button type="reset">إعادة</button>
+</form>
+</section>
+<!-------------------------------------------------------------------------------------------------------------------------->
+<hr>
+  <footer>
+    <p class="save">&#169; 2025 - موقع تعريف بتطبيقات الذكاء الاصطناعي </p>
+  </footer>
+</body>
+</html>
