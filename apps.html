@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- ترميز اللغة العربية-->
     <meta charset="UTF-8">
-    <!--الأحجام الحاسوب و الجوال-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--أيقونة عنوان الصفحة-->
-    <link rel="shortcut icon" type="imge/png" href="الصور/image.png">
-    <!--CSS ربط ملف-->
+    <link rel="shortcut icon" type="imge/png" href="logo.png">
     <link rel="stylesheet" type="text/css" href="Style.css">
-    <!--JavaScript ربط ملف-->
     <script src="myFunctions.js"></script>
-    <!--عنوان الصفحة-->
     <title>التطبيقات</title>
 </head>
 <!-------------------------------------------------------------------------------------------------------------------------->
@@ -21,56 +15,116 @@
     <ul>
         <li><a href="home.html">الرئيسية</a></li>
         <li><a href="apps.html">التطبيقات</a></li>
-        <li><a href="add_app.html">إدخال تطبيق</a></li>
-        <li class="call-us"><a href="aboutus.html">من نحن</a></li>
+        <li><a href="add_app.html">معلومات تطبيق</a></li>
+        <li><a href="aboutus.html">من نحن</a></li>
     </ul>
 </nav>
 </header>
 <!-------------------------------------------------------------------------------------------------------------------------->
-<section>
-    <table id="appsTable">
-        <tr>
-            <th>اسم التطبيق</th>
-            <th>اسم الشركة المطورة</th>
-            <th>مجال الاستخدام</th>
-            <th>مجاني/ غير مجاني</th>
-            <th>اختيار</th>
-        </tr>
+<table id="appsTable">
+<tr>
+<th>اسم التطبيق</th>
+<th>الشركة المطورة</th>
+<th>مجال الاستخدام</th>
+<th>مجاني/ غير مجاني</th>
+<th>اختيار</th>
+</tr>
 
-        <tr>
-            <td>ChatGPT</td>
-            <td>OpenAI</td>
-            <td>Education</td>
-            <td>مجاني</td>
-            <td><button class="toggle">إظهار التفاصيل</button></td>
-        </tr>
-        <tr class="details">
-            <td colspan="5">
-                تطبيق دردشة ذكي يستخدم الذكاء الاصطناعي لتوليد النصوص.<br>
-                <audio controls><source src="audio.mp3" type="audio/mp3"></audio>
-            </td>
-        </tr>
+<!-- مثال لتطبيق ChatGPT -->
+<tr>
+    <td>ChatGPT</td>
+    <td>OpenAI</td>
+    <td>AI Chat</td>
+    <td><input type="checkbox" checked disabled></td>
+    <td><input type="checkbox" class="show-details" data-target="details-chatgpt"></td>
+</tr>
 
-        <tr>
-            <td>Copilot</td>
-            <td>Microsoft</td>
-            <td>Programming</td>
-            <td>مدفوع</td>
-            <td><button class="toggle">إظهار التفاصيل</button></td>
-        </tr>
-        <tr class="details">
-            <td colspan="5">
-                مساعد برمجي ذكي يقترح أكواد للمطورين.<br>
-                <img src="copilot_logo.png" alt="Copilot Logo" width="80">
-            </td>
-        </tr>
-    </table>
-</section>
+<tr id="details-chatgpt" class="details-row">
+    <td colspan="5">
+        <strong>عنوان الموقع الالكتروني:</strong> 
+        <a href="https://chatgpt.com" target="_blank">https://chatgpt.com</a><br>
+        <strong>شرح مختصر:</strong> مساعد ذكي يعتمد على الذكاء الاصطناعي للتحدث والإجابة على الأسئلة.<br>
+        <strong>صورة (logo):</strong><br>
+        <img src="ChatGPT.png" alt="ChatGPT Logo" width="150"><br>
+        </video>
+    </td>
+</tr>
 
+<!-- مثال لتطبيق Gemini -->
+<tr>
+    <td>Gemini</td>
+    <td>Google</td>
+    <td>AI Chat / ذكاء اصطناعي للدردشة والتحليل</td>
+    <td><input type="checkbox" disabled></td>
+    <td><input type="checkbox" class="show-details" data-target="details-gemini"></td>
+</tr>
+
+<tr id="details-gemini" class="details-row">
+    <td colspan="5">
+        <strong>عنوان الموقع الالكتروني:</strong> 
+        <a href="https://gemini.google.com" target="_blank">https://gemini.google.com</a><br>
+        <strong>شرح مختصر:</strong>مساعد ذكي من Google يعتمد على الذكاء الاصطناعي، يساعد في الدردشة، الكتابة، الترجمة، البرمجة، التلخيص، وتوليد الأفكار بطريقة طبيعية وسلسة.<br>
+        <strong>صورة (logo):</strong><br>
+        <img src="Gemini.jpg" alt="Gemini Logo" width="150"><br>
+    </td>
+</tr>
+
+<!-- مثال لتطبيق DeepSeek -->
+<tr>
+    <td>DeepSeek</td>
+    <td>شركة متخصصة في تطوير نماذج الذكاء الاصطناعي المتقدمة</td>
+    <td>نموذج ذكاء اصطناعي حديث (AI Model)</td>
+    <td><input type="checkbox" checked disabled></td>
+    <td><input type="checkbox" class="show-details" data-target="details-deepSeek"></td>
+</tr>
+
+<tr id="details-deepSeek" class="details-row">
+    <td colspan="5">
+        <strong>عنوان الموقع الالكتروني:</strong> 
+        <a href="https://chat.deepseek.com/" target="_blank">https://chat.deepseek.com/</a><br>
+        <strong>شرح مختصر:</strong>التطبيق مجاني تمامًا في الوقت الحالي ويدعم اللغة العربية بشكل جيد، مع إمكانية رفع الملفات والبحث على الإنترنت عند تفعيل الخاصية.<br>
+        <strong>صورة (logo):</strong><br>
+        <img src="Deepseek.png" alt="DeepSeek Logo" width="150"><br>
+        <strong>ملف فيديو توضيحي:</strong><br>
+        <video controls width="300">
+            <source src="Deepseek.mp4" type="video/mp4">
+        </video>
+    </td>
+</tr>
+
+<!-- مثال لتطبيق Microsoft Copilot -->
+<tr>
+    <td>Microsoft Copilot</td>
+    <td>مايكروسوفت</td>
+    <td>مساعد ذكي يعتمد على الذكاء الاصطناعي</td>
+    <td><input type="checkbox" checked disabled></td>
+    <td><input type="checkbox" class="show-details" data-target="details-copilot"></td>
+</tr>
+
+<tr id="details-copilot" class="details-row">
+    <td colspan="5">
+        <strong>عنوان الموقع الالكتروني:</strong> 
+        <a href="https://copilot.microsoft.com/" target="_blank">https://copilot.microsoft.com/</a><br>
+        <strong>شرح مختصر:</strong>· المساعدة في الكتابة: مستندات، رسائل إيميل، عروض تقديمية
+· البرمجة وكتابة وتفسير الأكواد
+· الرد على الأسئلة والاستفسارات
+· تحليل البيانات وإنشاء التقارير
+· الإبداع: كتابة نصوص إبداعية، أفكار مشاريع
+· التعليم وشرح المفاهيم المعقدة<br>
+        <strong>صورة (logo):</strong><br>
+        <img src="Copilot.png" alt="Microsoft Copilot Logo" width="150"><br>
+        <strong>ملف فيديو توضيحي:</strong><br>
+        <video controls width="300">
+            <source src="Copilot.mp4" type="video/mp4">
+        </video>
+    </td>
+</tr>
+</table>
 <!-------------------------------------------------------------------------------------------------------------------------->
 <hr>
   <footer>
-    <p class="save">&#169; 2025 - موقع تعريف بتطبيقات الذكاء الاصطناعي </p>
+    <p>&#169; 2025 - موقع تعريف بتطبيقات الذكاء الاصطناعي </p>
   </footer>
 </body>
 </html>
+<!-------------------------------------------------------------------------------------------------------------------------->
